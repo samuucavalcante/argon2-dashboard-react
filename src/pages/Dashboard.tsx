@@ -2,15 +2,17 @@ import React from "react";
 import { Menu } from "../components/Menu";
 import { Row, Col } from "antd";
 import { AppBar } from "../components/Appbar";
+import { ListAtomCardDashboard } from "../components/dashboard/ListAtomCardDashboard";
 
 export const DashboardPage = () => {
   return (
-    <Row gutter={10}>
-      <Col lg={4}>
+    <Row gutter={24}>
+      <Col xl={4} span={0}>
         <Menu />
       </Col>
-      <Col lg={20}>
+      <Col xl={20} span={24}>
         <AppBar />
+        <ListAtomCardDashboard />
       </Col>
     </Row>
   );
