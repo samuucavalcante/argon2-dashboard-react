@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  outline: none;
+  box-sizing: border-box;
+
+}
+
+*:focus {
+  outline-style: none;
+	box-shadow: none;
+	border-color: transparent; 
+}
