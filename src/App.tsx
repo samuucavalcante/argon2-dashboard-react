@@ -6,7 +6,6 @@ import { DashboardPage } from './pages/Dashboard'
 import { Background } from './components/Background'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Background>
