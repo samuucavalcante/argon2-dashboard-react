@@ -16,10 +16,10 @@ export const SliderAntd: React.FC<Props> = ({ imgArray = images }) => {
   }));
 
   return (
-    <div className="min-h-[300px]">
+    <div >
       <Carousel
         autoplay
-        className="border  w-full rounded-lg h-full"
+        className=" h-full"
         dotPosition={dotPosition}
       >
         {imageDto.map((img) => (

@@ -8,9 +8,10 @@ import { Slider } from "../components/Slider";
 import { SliderAntd } from "../components/Slider/SliderAntd";
 import { SalesByCountry } from "../components/dashboard/SalesByCountry";
 import { Categories } from "../components/dashboard/Categories";
+import { Footer } from "../components/Footer";
 
 export const DashboardPage = () => {
-  const [input, setInput] = useState('')
+  const [input, setInput] = useState("");
 
   return (
     <Row gutter={24}>
@@ -24,18 +25,30 @@ export const DashboardPage = () => {
         <ListAtomCardDashboard />
         <Row style={{ marginTop: 28 }} gutter={[24, 24]}>
           <Col xl={13} lg={24} md={24} span={24}>
-            <SalesOverview />
+            <Row gutter={[24, 24]}>
+              <Col span={24}>
+                <SalesOverview />
+              </Col>
+              <Col span={24}>
+                <SalesByCountry />
+              </Col>
+            </Row>
           </Col>
           <Col xl={11} lg={24} span={24}>
-            <SliderAntd />
+            <Row gutter={[24, 24]} >
+              <Col span={24}>
+                <SliderAntd />
+              </Col>
+              <Col span={24}>
+                <Categories />
+              </Col>
+            </Row>
           </Col>
         </Row>
-        <Row style={{ marginTop: 28 }} gutter={[24,24]}>
-          <Col xl={13} lg={24} md={24} span={24}>
-            <SalesByCountry />
-          </Col>
-          <Col xl={11} lg={24} span={24}>
-            <Categories />
+
+        <Row>
+          <Col span={24}>
+              <Footer/>
           </Col>
         </Row>
       </Col>
