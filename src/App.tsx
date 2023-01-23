@@ -6,10 +6,9 @@ import { DashboardPage } from './pages/Dashboard'
 import { Background } from './components/Background'
 
 function App() {
-
   return (
     <Background>
-      <DashboardPage />
+      <DashboardPage  />
     </Background>
   )
 }
